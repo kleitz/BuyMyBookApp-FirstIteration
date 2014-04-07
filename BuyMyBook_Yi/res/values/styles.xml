@@ -1,0 +1,53 @@
+<resources>
+  
+    <style name="profileBooksHeader" parent="profilePage">
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    
+    <style name="profilePageInfo" parent="profilePage">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+    
+    <style name="profilePageName" parent="profilePage">
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    
+    <style name="profilePage">
+        <item name="android:textColor">@color/midnightblue</item>
+        <item name="android:textColorLink">@color/carrot</item>
+        <item name="android:textColorHighlight">@color/belizehole</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- BmB theme here THIS FILE SHOULD BE OBSOLETE DO NOT EDIT1!!! -YI -->
+    <style name="ThemeSelector" parent="android:Theme.Light">
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+    </style>
+    
+    <style name="WindowTitleBackground">     
+        <item name="android:background">@color/title_background</item>
+    </style>
+
+</resources>

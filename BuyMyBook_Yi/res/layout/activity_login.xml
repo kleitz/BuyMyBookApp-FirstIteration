@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.facebook.widget.ProfilePictureView
+        android:id="@+id/profilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" />
+        
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="200dp"
+        android:gravity="center" >
+        
+        <com.facebook.widget.LoginButton
+	        android:id="@+id/authButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center_horizontal" />
+        
+	    <Button
+	        android:id="@+id/goToMain"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:text="@string/go_to_main"
+	        android:visibility="invisible" />
+    </TableRow>
+    
+    <TextView 
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:text="@string/welcome"
+        android:layout_toRightOf="@id/profilePicture"
+        android:visibility="visible" />
+    
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_below="@id/welcome"
+        android:layout_toRightOf="@id/profilePicture"
+        android:visibility="invisible" />
+    
+    <EditText
+        android:id="@+id/phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/phone_num"
+        android:textSize="14sp"
+        android:inputType="phone"
+	    android:singleLine="true"
+	    android:imeOptions="actionDone"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/profilePicture"
+        android:visibility="invisible" />
+    
+    <EditText
+        android:id="@+id/textNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/text_num"
+        android:textSize="14sp"
+        android:inputType="phone"
+	    android:singleLine="true"
+	    android:imeOptions="actionDone"
+        android:layout_below="@id/phoneNum"
+        android:layout_toRightOf="@id/profilePicture"
+        android:visibility="invisible" />
+    
+    <EditText
+        android:id="@+id/newEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/email"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+	    android:singleLine="true"
+	    android:imeOptions="actionDone"
+        android:layout_below="@id/textNum"
+        android:layout_toRightOf="@id/profilePicture"
+        android:visibility="invisible" />
+
+    <TextView
+    	android:id="@+id/informUserForMoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#FF0000"
+        android:layout_below="@id/newEmail"
+        android:gravity="center_horizontal"
+        android:visibility="invisible" />
+	
+    <TextView
+        android:id="@+id/accessToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accessToken"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userId"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/fbURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:visibility="invisible" />
+    
+</RelativeLayout>

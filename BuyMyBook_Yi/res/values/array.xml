@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string-array name="nav_drawer_items">
+        <item >Sell Book</item>
+        <item >Find Book</item>
+        <item >My Profile</item>
+        <item >Logout</item>
+    </string-array>
+	<array name="nav_drawer_icons">
+        <item>@drawable/ic_menu_camera_normal</item>
+        <item>@drawable/ic_menu_search_normal</item>
+		<item>@drawable/ic_menu_booker_normal</item>
+		<item>@drawable/fb_icon</item>
+    </array>
+</resources>

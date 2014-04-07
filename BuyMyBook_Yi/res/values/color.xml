@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- action bar colours -->
+    <color name="title_background">#1abc9c</color>
+    <color name="actionbar_grey">#d1f1eb</color> <!-- color to title on action bar -->
+    
+    <!--  slide menu colours -->
+    
+    <color name="list_item_title">#d1f1eb</color>
+    <color name="list_background">#2c3e50</color>
+    <color name="list_background_pressed">#d35400</color>
+    <color name="list_divider">#ecf0f1</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    
+    <!-- general colours for views -->
+    <color name="default_background_grey">#ecf0f1</color>
+    <color name="default_text_colour">#34495e</color>
+    <color name="default_text_hint_colour">#4f6f8f</color>
+    <color name="testing_orange">#ffa200</color>
+	
+    <color name="detailshighlight">#BFE3CE</color>
+    
+    
+    <color name="turqoise">#1ABC9C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="clouds">#ECF0F1</color>
+   	<color name="greensea">#16A085</color>
+	<color name="emerald">#2ECC71</color>
+	<color name="nephritis">#27AE60</color>
+	<color name="peterriver">#3498DB</color>
+	<color name="belizehole">#2980B9</color>
+	<color name="amethyst">#9B59B6</color>
+	<color name="wisteria">#8E44AD</color>
+	<color name="wetasphalt">#34495E</color>
+	<color name="midnightblue">#2C3E50</color>
+	<color name="concrete">#95A5A6</color>
+	<color name="asbestos">#7F8C8D</color>
+	<color name="silver">#BDC3C7</color>
+	<color name="alizarin">#E74C3C</color>
+	<color name="pomegranate">#C0392B</color>
+	<color name="carrot">#E67E22</color>
+	<color name="pumpkin">#D35400</color>
+	<color name="sunflower">#F1C40F</color>
+	<color name="orange">#F39C12</color>
+    
+</resources>

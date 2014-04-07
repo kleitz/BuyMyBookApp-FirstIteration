@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/default_background_grey" >
+    
+    <!-- Dummy item to prevent other views from receiving focus -->
+    <LinearLayout
+    	android:focusable="true"
+    	android:focusableInTouchMode="true"
+    	android:layout_width="0px"
+    	android:layout_height="0px" />
+    
+    <RelativeLayout
+        	android:id="@+id/profile"
+        	android:layout_width="fill_parent"
+        	android:layout_height="200dp"
+        	android:orientation="vertical">
+	    
+	    <com.facebook.widget.ProfilePictureView
+			android:id="@+id/profile_pic"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginTop="15dp"
+		    android:layout_marginRight="5dp"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:onClick="goToFacebook" />
+
+        <TextView
+            android:id="@+id/first_name"
+            style="@style/profilePageName"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_marginTop="9dp" />
+        
+        <TextView
+            android:id="@+id/last_name"
+            style="@style/profilePageName"
+            android:layout_toRightOf="@id/profile_pic"
+            android:layout_below="@id/first_name" />
+        
+        <ImageView
+            android:id="@+id/phone_img"
+            android:src="@drawable/phone"
+            android:contentDescription="@string/phone_img_description"
+            android:layout_marginTop="7dp"
+            android:layout_width="32dp"
+         	android:layout_height="32dp"
+            android:layout_below="@id/last_name"
+            android:layout_toRightOf="@id/profile_pic"
+            android:adjustViewBounds="true" />
+                
+		<EditText
+	        android:id="@+id/phone"
+		    style="@style/profilePageInfo"
+	        android:layout_toRightOf="@id/phone_img"
+	        android:layout_below="@id/last_name"
+	        android:inputType="phone"
+	        android:singleLine="true"
+	        android:imeOptions="actionDone" />
+		
+		<ImageView
+		    android:id="@+id/message_img"
+		    android:src="@drawable/message"
+		    android:contentDescription="@string/message_img_description"
+		    android:layout_marginTop="7dp"
+		    android:layout_width="32dp"
+		    android:layout_height="32dp"
+		    android:layout_below="@id/phone"
+		    android:layout_toRightOf="@id/profile_pic"
+		    android:adjustViewBounds="true" />
+		
+		<EditText
+	        android:id="@+id/message"
+	        style="@style/profilePageInfo"
+	        android:layout_toRightOf="@id/message_img"
+	        android:layout_below="@id/phone"
+	        android:inputType="phone"
+	        android:singleLine="true"
+	        android:imeOptions="actionDone" />
+		
+		<ImageView
+            android:id="@+id/email_img"
+            android:src="@drawable/email"
+            android:contentDescription="@string/email_img_description"
+            android:layout_marginTop="7dp"
+            android:layout_width="32dp"
+         	android:layout_height="32dp"
+            android:layout_below="@id/message_img"
+            android:layout_toRightOf="@id/profile_pic"
+            android:adjustViewBounds="true" />
+	    
+	    <EditText
+	        android:id="@+id/email"
+	        style="@style/profilePageInfo"
+	        android:inputType="textEmailAddress"
+	        android:singleLine="true"
+	        android:imeOptions="actionDone"
+	        android:layout_toRightOf="@id/email_img"
+	        android:layout_below="@id/message_img" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/books_selling_text"
+        style="@style/profileBooksHeader"
+        android:layout_below="@id/profile" />
+ 
+    <ListView
+          android:id="@+id/my_books"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/books_selling_text"
+          android:layout_marginTop="10dp"
+          android:layout_alignParentBottom="true"
+          android:background="@color/list_item_title"
+          android:cacheColorHint="@android:color/transparent"
+          android:divider="@color/list_divider"
+          android:dividerHeight="10dp"
+          android:paddingLeft="2dp" />
+</RelativeLayout>

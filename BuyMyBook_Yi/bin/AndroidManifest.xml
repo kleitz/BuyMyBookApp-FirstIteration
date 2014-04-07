@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.EasyPeasy.buymybook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeSelector" >
+        <activity
+            android:name="com.EasyPeasy.buymybook.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"  />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.EasyPeasy.buymybook.LoginActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.EasyPeasy.buymybook.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.PostActivity"
+            android:label="@string/title_activity_post"
+            android:parentActivityName="com.EasyPeasy.buymybook.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.EasyPeasy.buymybook.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.ScannerManager"
+            android:label="@string/title_activity_scanner_manager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.ManualSearchActivity"
+            android:label="@string/title_activity_manual_search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.SearchManualActivity"
+            android:label="@string/title_activity_search_manual"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.SearchResultsActivity"
+            android:label="@string/title_activity_search_results"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.EasyPeasy.buymybook.MyFragmentActivity"
+            android:label="@string/title_activity_my_fragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"/>
+        <activity 
+            	android:name="com.facebook.LoginActivity" 
+            	android:label="Facebook Login activity"
+            	android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

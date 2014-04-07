@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="submit">Submit</string>
+    <string name="app_name">Buy My Book!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_world_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula diam sapien, vitae suscipit sem vulputate eget. Mauris sit amet suscipit lectus. Morbi pellentesque augue eu nisi iaculis, sit amet euismod nunc luctus. Curabitur ut dolor massa. Nullam vel lacinia dolor, luctus tincidunt est. Nulla quis mi eu ligula hendrerit consequat. Vestibulum tempus in tortor at ultricies. Vivamus vitae malesuada erat. Sed vulputate nulla semper est scelerisque, vel eleifend elit vestibulum. Integer condimentum a justo et hendrerit. Integer sodales, neque eget sagittis pretium, ipsum urna pretium enim, tristique auctor tellus velit a quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent quis magna porttitor, tincidunt lacus vitae, feugiat dui. Aenean semper quam ut odio vehicula consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </string>
+	<string name="app_id">526666174121234</string>
+	
+	<!-- Login screen -->
+	<string name="go_to_main">Register and enter app</string>
+    <string name="welcome">Welcome! Please login</string>
+    <string name="welcome_new_user">Thanks for signing up</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="phone_num">Enter your phone #:</string>
+    <string name="text_num">Enter your texting #:</string>
+    <string name="email">Enter your email address</string>
+    <string name="inform_user">We need more info from you. Please enter your phone number, texting number and email address above.</string>
+	
+    <!-- MainActivity Strings -->
+    <string name="main_greeting">SPRING2014 is almost here! Remember to sell your books.</string>
+    <string name="main_instruction">not set!</string>
+    <string name="main_inst_sell"> to sell a book.\n Swipe </string>
+    <string name="main_inst_swipe"> to access your menu.\n </string>
+    <string name="main_inst_look"> to look for books.</string>
+
+    <!-- drawer menu Strings - the arrays are in array[dot]xml -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="drawer_open">Menu Open</string>
+    <string name="drawer_close">Menu Close</string>
+
+    <!-- strings for PostActivity -->
+    <string name="title_activity_post">Sell Your Book!</string>
+    <string name="errorMsg_activity_post">Sorry, something went wrong while you were posting your book. Please try again.</string>
+    <string name="title_activity_scanner_manager">ScannerManager</string>
+	<string name="post_pre_instruction">Scan your book and load its information!</string>
+    <string name="post_enterinfo_header">Tell Us More...</string>
+    <string name="post_enterinfo_course_ask">Used in course:</string>
+    
+     <string-array name="condition_scroller">
+        <item>As New</item>
+        <item>Very Good</item>
+        <item>Good</item>
+        <item>Fair</item>
+        <item>Poor</item>
+        <item>Decomposed</item>
+     </string-array>
+    
+    <!-- Strings for Searching -->
+    <string name="search_manual">Search Manually</string>
+    <string name="search_scan">Search by Scanning</string>
+    <string name="default_search">DefaultText</string>
+    <string name="title_activity_search_manual">Search results</string>
+    <string name="search_manual_title">Search Results</string>
+    <string name="title_activity_search_scan">SearchScan</string>
+    <string name="title_activity_manual_search">Find Your Book</string>
+    <string name="title_manual_search">We will find best match</string>
+    <string name="title_activity_post_confirmation">PostConfirmationActivity</string>
+    <string name="title_activity_post_scan_confirmation">Post a book - confirm scan information</string>
+    <string name="courseText">Course</string>
+    <string name="term">Term</string>
+    <string name="scanISBN">Scan ISBN</string>
+    <string name="subject">Subject</string>
+    <string name="post_manual_header_text">We\'ll find the best match</string>
+    <string name="post_manual_booktitle_hint">Book Title</string>
+    <string name="post_manual_bookauthor_hint">Author(s)</string>
+    <string name="post_manual_bookisbn_hint">ISBN</string>
+    <string name="post_manual_deptspinner_prompt">Dept</string>
+    <string name="title_activity_search_results">Search Results</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_my_fragment">MyFragmentActivity</string>
+    <string name="comment">Comments:</string>
+    <!-- Strings for ProfileActivity -->
+    <string name="title_activity_profile">My Profile</string>
+    <string name="phone_img_description">Image of a phone</string>
+    <string name="message_img_description">Image of a message</string>
+    <string name="email_img_description">Image of an email</string>
+
+</resources>
